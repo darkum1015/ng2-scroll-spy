@@ -1,0 +1,1 @@
+{"version":3,"file":"scroll-spy.module.js","sourceRoot":"","sources":["scroll-spy.module.ts"],"names":[],"mappings":"AAAA;;GAEG;;;;;;;;;;;AAEH,qBAAuB,eAAe,CAAC,CAAA;AACvC,qCAAiC,wBAAwB,CAAC,CAAA;AAO1D;IAAA;IAA6B,CAAC;IAL9B;QAAC,eAAQ,CAAC;YACR,YAAY,EAAC,CAAC,yCAAkB,CAAC;YACjC,OAAO,EAAC,CAAC,yCAAkB,CAAC;SAC7B,CAAC;;uBAAA;IAE2B,sBAAC;AAAD,CAAC,AAA9B,IAA8B;AAAjB,uBAAe,kBAAE,CAAA"}
