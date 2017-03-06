@@ -3,38 +3,25 @@ import {Component, OnInit, HostListener, Input} from '@angular/core';
 @Component({
   moduleId: module.id,
   selector: 'scroll-spy',
-  template: `<div class="scroll-spy">
-<div [style.width]="scrollSpyWidth" [style.background-color]="progressColor" class="progress"></div>
-</div>`,
+  templateUrl: './scroll-spy.component.html',
+  styleUrls:['./scroll-spy.component.css'],
   host: {
     '(document:scroll)': 'onScroll($event)'
 
   },
-  styles: [`
-.scroll-spy{
-    height: 10px;
-    width: 100%;
-}
-.scroll-spy > .progress{
- 
-  height: inherit;
-  position: fixed;
-  z-index: 1;
-}`]
+
 })
 
 export class ScrollSpyComponent implements OnInit {
-  /*@HostListener('document:scroll',['$event'])*/
+    /*@HostListener('document:scroll',['$event'])*/
+  @Input()
+  progressColor: string = '#40aa94';
   private scrollSpyWidth: string = "0%";
 
-
-@Input()
-  progressColor: string = 'red';
   onScroll($event: any): void {
     this.setWidth();
 
   }
-
 
   setWidth(): void {
     this.scrollSpyWidth = "0%";
