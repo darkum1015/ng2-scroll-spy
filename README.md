@@ -6,22 +6,27 @@ Usage dependencies: Angular 2.4.*
 
 Usage guide:
 
- Import ScrollSpy module to your application
+### Import ScrollSpy module to your application
 
-Sample
+Sample:
+```
 import {ScrollSpyModule} from "./scroll-spy/scroll-spy.module";
-
+```
+```
 @NgModule({
   imports:      [ BrowserModule, ScrollSpyModule ],
   declarations: [ <all-your-components> ],
   bootstrap:    [ <bootstrap-component> ],
   providers:    [ <all-your-services> ]
 })
+```
 
- Use <scroll-spy> in any other component in your application 
+### Use in any other component in your application
 
-Sample
+Sample:
+```
 <scroll-spy [progressColor]="'blue'"></scroll-spy>
+```
 Inputs:
 progressColor: String = set a custom color to your scroll spy progress bar.
 
