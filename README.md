@@ -6,7 +6,7 @@ Usage dependencies: Angular 2.4.*
 
 Usage guide:
 
-# Import ScrollSpy module to your application
+ Import ScrollSpy module to your application
 
 Sample
 import {ScrollSpyModule} from "./scroll-spy/scroll-spy.module";
@@ -18,7 +18,7 @@ import {ScrollSpyModule} from "./scroll-spy/scroll-spy.module";
   providers:    [ <all-your-services> ]
 })
 
-# Use component in any other component in your application 
+ Use <scroll-spy> in any other component in your application 
 
 Sample
 <scroll-spy [progressColor]="'blue'"></scroll-spy>
