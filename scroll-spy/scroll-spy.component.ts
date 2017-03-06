@@ -18,11 +18,13 @@ export class ScrollSpyComponent implements OnInit {
   progressColor: string = '#40aa94';
   private scrollSpyWidth: string = "0%";
 
+  //event handle for scroll
   onScroll($event: any): void {
     this.setWidth();
 
   }
 
+  //set the width of progress bar
   setWidth(): void {
     this.scrollSpyWidth = "0%";
     if (this.getWidth() > 0) {
@@ -37,15 +39,16 @@ export class ScrollSpyComponent implements OnInit {
   }
 
   getMax(): number {
-
+    // Get document height - viewport's innerHeight
     return document.body.scrollHeight - window.innerHeight;
-
   }
 
+  //total scroll on vertical scroll-bar
   getValue(): number {
     return window.scrollY;
   }
 
+  //calculate width based on current scroll
   getWidth(): number {
     let max = this.getMax();
     let scrollValue = this.getValue();
